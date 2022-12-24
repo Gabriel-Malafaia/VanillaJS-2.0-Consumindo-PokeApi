@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consumindo PokeAPI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+  </head>
+
+  <body class="flexColumn">
+    <header class="header container flexColumn">
+      <img src="./src/assets/pokeapi.png" alt="Pokemon logo" />
+      <form class="header__form flex">
+        <input id="form__input" placeholder="Pesquisar por..." type="search" />
+        <button class="form__submit" type="submit">
+          <img class="form__submit" src="./src/assets/search-icon.png" alt="" />
+        </button>
+      </form>
+    </header>
+    <main class="main container flexColumn">
+      <h1>Lista de Pokémon</h1>
+      <img
+        class="hidden loading__image"
+        src="https://media.tenor.com/2lFt6lp1KaMAAAAj/run-pokemon.gif"
+        alt=""
+      />
+      <ul class="pokemonList"></ul>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./src/scripts/axios.js"></script>
+    <script type="module" src="./src/scripts/support.js"></script>
+    <script type="module" src="./src/scripts/requests.js"></script>
+    <script type="module" src="./src/scripts/index.js"></script>
+  </body>
+</html>

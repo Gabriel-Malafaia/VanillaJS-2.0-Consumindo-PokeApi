@@ -1,0 +1,44 @@
+:root {
+  /* Colors */
+  --color-primary: #4c6ef5;
+
+  --color-grey-1: #212529;
+  --color-grey-2: #343a40;
+  --color-grey-3: #7c8b99;
+  --color-grey-4: #dee2e6;
+  --color-grey-5: #ffffff;
+
+  /* FontSize */
+  --fontSize-1: 24px;
+  --fontSize-2: 20px;
+  --fontSize-3: 16px;
+
+  /* FontWeight */
+  --fontRegular: 400;
+  --fontMedium: 500;
+  --fontBold: 600;
+
+  /* BorderRadius */
+  --radius-1: 8px;
+}
+
+.container {
+  max-width: 800px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
